@@ -1,8 +1,3 @@
-
-
-console.log('client side java script is loaded')
-
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const message1 = document.getElementById('p1')
@@ -25,14 +20,9 @@ weatherForm.addEventListener('submit', (e) => {
                 message1.textContent = "Location : " + data.address
                 message2.textContent = "Forecast : " + data.forecast
                 wIcon.src=data.weatherIcon
-
             }
-
         })
     })
-
-
-
 })
 
 
